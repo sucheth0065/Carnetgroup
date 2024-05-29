@@ -9,6 +9,8 @@ import { FaStar } from 'react-icons/fa';
 import BgOfHowWeWork from '../assets/BgOfHowWeWork.jpg'
 import { Link } from 'react-router-dom';
 
+//This is code
+
 const handleClick = () => {
     window.scrollTo(0, 0);
 };
