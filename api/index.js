@@ -5,9 +5,18 @@ import userRouter from './routes/user.route.js';
 import authRouter from './routes/auth.route.js';
 dotenv.config();
 
-mongoose.connect(process.env.MONGO_URL).then(()=>{
-    console.log("connected to MongoDB");
-})
+mongoose.connect(process.env.MONGO_URL, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    
+  })
+  .then(() => {
+    console.log('MongoDB connected successfully');
+  })
+  .catch(err => {
+    console.error('MongoDB connection error:', err);
+  });
+
 
 const app = express();
 
