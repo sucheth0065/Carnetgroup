@@ -1,28 +1,51 @@
-import express from 'express';
-import mongoose from 'mongoose';
-import dotenv from 'dotenv';
-import userRouter from './routes/user.route.js';
-import authRouter from './routes/auth.route.js';
+const express = require("express");
+const mongoose = require("mongoose");
+const dotenv = require("dotenv");
+const User = require("./models/user.model.js");
+const bcrypt = require("bcrypt");
+const cors = require("cors");
 dotenv.config();
 
-mongoose.connect(process.env.MONGO_URL, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-    
-  })
+const url =
+  "mongodb+srv://Sucheth:sucheth6500@cluster0.mebxuu9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+
+mongoose
+  .connect(url)
   .then(() => {
-    console.log('MongoDB connected successfully');
+    console.log("Connected to MongoDB");
   })
-  .catch(err => {
-    console.error('MongoDB connection error:', err);
+  .catch((err) => {
+    console.error("MongoDB connection error:", err);
   });
 
-
 const app = express();
+app.use(express.json());
+app.use(
+  cors({
+    credentials: true,
+    origin: "http://localhost:5173",
+  })
+);
 
-app.listen(3000 , () =>{
-    console.log("Server is listening on port 3000")
+const bcryptSalt = bcrypt.genSaltSync(10);
+
+app.get("/test", (req, res) => {
+  res.json("Test ok!");
 });
 
-app.use('./api/user',userRouter);
-app.use('./api/auth',authRouter);
+app.post("/signup", async (req, res) => {
+  const { username, email, password, mobile } = req.body;
+
+  let userDoc = await User.create({
+    username,
+    email,
+    password: bcrypt.hashSync(password, bcryptSalt),
+    mobilenumber: mobile,
+  });
+
+  res.json(userDoc);
+});
+
+app.listen(3000, () => {
+  console.log("Server is listening on port 3000");
+});
