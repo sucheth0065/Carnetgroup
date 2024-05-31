@@ -4,7 +4,7 @@ import Carnetlogo from "../assets/Carnetlogo.jpeg";
 
 export default function Header() {
   return (
-    <header className="bg-black shadow-md fixed top-0 w-full z-50">
+    <header className="bg-black opacity-95 shadow-md fixed top-0 w-full z-50">
       <div className="flex justify-between items-center max-w-6xl mx-auto p-3 h-32">
         <div className="flex items-center space-x-4">
           <img

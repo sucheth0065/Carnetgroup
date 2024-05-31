@@ -3,7 +3,7 @@ import { FaInstagram, FaFacebook, FaYoutube, FaLinkedin } from 'react-icons/fa';
 
 export default function() {
   return (
-    <footer className='bg-black bg-opacity-90 shadow-md '>
+    <footer className='bg-black bg-opacity-90'>
         <div className='flex justify-between items-center max-w-6xl  mx-auto p-3'>
             <div className='font-semibold text-2xl text-white'>
                 <h1 className="font-bold text-sm sm:text-4xl flex flex-wrap">

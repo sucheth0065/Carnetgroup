@@ -14,7 +14,7 @@ import HowWeWork1 from '../assets/HowWeWork.jpg'
 
 export default function HowWeWork() {
   return ( 
-    <div className='w-fit mx-10 flex-grow '>
+    <div className='w-fit mx-10 flex-grow mt-32'>
       <div className='h-80 mt-2'>
         <img src={HowWeWork1} className='h-80 w-screen '/>
       </div>
