@@ -1,17 +1,18 @@
 import React from 'react'
+import BgOfHowWeWork from '../assets/BgOfHowWeWork.jpg'
 
 export default function About() {
   return (
     <div className='mt-32'>
-      <h1 className="text-3xl font-bold mb-4">About Us</h1>
+      <div className='flex flex-row'>
+      <div className='w-1/2'>
+        <img src={BgOfHowWeWork} alt='Image description'/>
+      </div>
+      <div className='bg-black opacity-85 text-white w-1/2 p-5 rounded-3xl'>
+      <h1 className="text-4xl font-bold mb-4 flex justify-center">About Us</h1>
       <p className="mb-4">
         Welcome to <span className="text-orange-500 font-bold">Carnet Group</span>, where your vision meets our creativity to transform spaces into stunning works of art. Located in the heart of Hyderabad, we are one of the city's premier interior design studios, renowned for our ability to turn dreams into reality. Our passion lies in designing interiors that are not only beautiful but also functional, ensuring every corner of your home or office reflects your personality and style.
       </p>
-
-      <p className="mb-4">  
-         With over two years in the industry and a wealth of professional experience, <span className="text-orange-500 font-bold">Carnet Group</span> has successfully completed more than 100 projects, earning the trust and satisfaction of our clients. Our commitment to excellence and attention to detail sets us apart, making us the preferred choice for those seeking top-notch interior design services.
-      </p>
-
       <h2 className="text-2xl font-bold mb-2">Our Philosophy</h2>
       <p className="mb-4">
         At <span className="text-orange-500 font-bold">Carnet Group</span>, we believe that beauty is omnipresent but requires the right vision to be discovered. Our approach combines art, science, and design to create spaces that are both aesthetically pleasing and highly functional. We see every project as an opportunity to create something unique and extraordinary, tailored to the specific needs and desires of our clients.
@@ -54,6 +55,8 @@ export default function About() {
     <p className="mb-4">
       Join us on this journey of transformation. Contact us today to get started!
     </p>
+    </div>
+    </div>
     </div>
   );
 };
