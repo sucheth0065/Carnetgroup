@@ -1,11 +1,10 @@
 import React from "react";
-import { FaSearch } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import Carnetlogo from "../assets/Carnetlogo.jpeg";
 
 export default function Header() {
   return (
-    <header className="bg-black shadow-md">
+    <header className="bg-black shadow-md fixed top-0 w-full z-50">
       <div className="flex justify-between items-center max-w-6xl mx-auto p-3 h-32">
         <div className="flex items-center space-x-4">
           <img
@@ -20,10 +19,6 @@ export default function Header() {
             </h1>
           </Link>
         </div>
-        {/* <form className='bg-orange-200 p-3 rounded-lg flex items-center'>
-                <input type='text' placeholder='Search...' className='bg-transparent focus:outline-none w-24 sm:w-64 '/>
-                <FaSearch className='text-orange-600'/>
-            </form> */}
         <div className="flex items-center justify-end">
           <ul className="flex gap-6 items-center">
             <Link to="/home">

@@ -8,7 +8,7 @@ import { FaRupeeSign } from 'react-icons/fa';
 import { FaStar } from 'react-icons/fa';
 import BgOfHowWeWork from '../assets/BgOfHowWeWork.jpg'
 import { Link } from 'react-router-dom';
-
+import HomePageVideo from '../assets/HomePageVideo.mp4'
 //This is code
 
 const handleClick = () => {
@@ -19,7 +19,9 @@ export default function Home() {
   return (
     <div>
       <div style={{width:"1920" , height:"800"}}>
-        <img src={Modern} style={{width:"1920" }}/>
+        <div className="video-container">
+          <video className="background-video" src={HomePageVideo} autoPlay loop muted />
+        </div>
       </div>
       <div className='bg-zinc-950  flex justify-between items-center p-3'>
         <div className='flex-col ml-6 item-center'>

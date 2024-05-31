@@ -21,7 +21,7 @@ import Kitchen6 from '../assets/Kitchen6.jpg'
 
 export default function OurServices() {
   return (
-    <div className='min-h-screen pb-20'> 
+    <div className='min-h-screen pb-20 pt-40'> 
     <div className='min-h-full'>
       <div className='bg-orange-400 h-20'>
         <h1 className='text-center text-white text-xl font-xl pt-6'>Bed Room</h1>

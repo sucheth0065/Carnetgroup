@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function About() {
   return (
-    <div className='h-screen'>
+    <div className='h-screen pt-16'>
       <div className='h-80 mt-10 flex flex-col justify-center pl-20 bg-white'>
         <h3 className='font-semibold text-2xl pb-5'>Home Decor Ideas</h3>
         <h1 className='font-bold text-5xl '>Beyond the Ordinary...</h1>
