@@ -16,7 +16,7 @@ export default function HowWeWork() {
   return ( 
     <div className='w-fit mx-10 flex-grow mt-32'>
       <div className='h-80 mt-2'>
-        <img src={HowWeWork1} className='h-80 w-screen '/>
+        <img src={HowWeWork1} className='h-80 w-screen'/>
       </div>
       <div className='h-80 mt-2 flex flex-col justify-center pl-20 bg-white '>
         <h3 className='font-semibold text-2xl pb-5'>Interior Design process</h3>

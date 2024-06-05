@@ -41,7 +41,7 @@ export default function OurServices() {
       </div>
       <div className='h-80 mx-5 my-10 flex justify-between items-center'>
         <img src={Livingroom1} className='h-80 flex-row' alt="Livingroom 1"/>
-        <img src={Livingroom2} className='h-80 flex-row' alt="Living 2"/>
+        <img src={Livingroom2} className='h-80 flex-row ml-5 mr-5' alt="Living 2"/>
         <img src={Livingroom3} className='h-80 flex-row' alt="Living 3"/>
       </div>
       <div className='h-80 mx-5 my-10 flex justify-between items-center'>
@@ -54,12 +54,12 @@ export default function OurServices() {
       </div>
       <div className='h-80 mx-5 my-10 flex justify-between items-center'>
         <img src={Kitchen1} className='h-80 flex-row' alt="Kitchen 1"/>
-        <img src={Kitchen2} className='h-80 flex-row' alt="Kitchen 2"/>
+        <img src={Kitchen2} className='h-80 flex-row ml-5 mr-5' alt="Kitchen 2"/>
         <img src={Kitchen3} className='h-80 flex-row' alt="Kitchen 3"/>
       </div>
       <div className='h-80 mx-5 my-10 flex justify-between items-center'>
         <img src={Kitchen4} className='h-80 flex-row ' alt="Kitchen 4"/>
-        <img src={Kitchen5} className='h-80 flex-row' alt="Kitchen 5"/>
+        <img src={Kitchen5} className='h-80 flex-row ml-5 mr-5' alt="Kitchen 5"/>
         <img src={Kitchen6} className='h-80 flex-row ' alt="Kitchen 6"/>
       </div>
     </div>

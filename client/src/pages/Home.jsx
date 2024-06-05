@@ -1,5 +1,5 @@
 import React from 'react';
-import Modern from '../assets/modern-hotel-room-with-illuminated-pictures.jpg';
+
 import { FaHome } from 'react-icons/fa';
 import { MdAccessTime } from 'react-icons/md';
 import { MdLightbulbOutline } from 'react-icons/md';

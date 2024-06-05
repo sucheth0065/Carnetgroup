@@ -5,10 +5,10 @@ export default function About() {
   return (
     <div className='mt-32'>
       <div className='flex flex-row'>
-      <div className='w-1/2'>
-        <img src={BgOfHowWeWork} alt='Image description'/>
+      <div className='w-1/2 h-30'>
+        <img src={BgOfHowWeWork} alt='Image description' />
       </div>
-      <div className='bg-black opacity-85 text-white w-1/2 p-5 rounded-3xl'>
+      <div className='bg-black opacity-85 text-white w-1/2 p-5'>
       <h1 className="text-4xl font-bold mb-4 flex justify-center">About Us</h1>
       <p className="mb-4">
         Welcome to <span className="text-orange-500 font-bold">Carnet Group</span>, where your vision meets our creativity to transform spaces into stunning works of art. Located in the heart of Hyderabad, we are one of the city's premier interior design studios, renowned for our ability to turn dreams into reality. Our passion lies in designing interiors that are not only beautiful but also functional, ensuring every corner of your home or office reflects your personality and style.
