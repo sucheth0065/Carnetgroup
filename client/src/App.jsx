@@ -9,6 +9,8 @@ import HowWeWork from "./pages/HowWeWork";
 import Footer from "./components/Footer";
 import OurServices from "./pages/OurServices";
 import axios from "axios";
+import ContactUs from "./pages/ContactUs";
+import './App.css';
 
 axios.defaults.baseURL = "http://localhost:3000";
 
@@ -25,6 +27,7 @@ export default function App() {
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/profile" element={<Profile />} />
         <Route path="/ourservices" element={<OurServices />} />
+        <Route path="/contactus" element={<ContactUs/>} />
       </Routes>
       <Footer />
     </BrowserRouter>

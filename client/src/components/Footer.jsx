@@ -39,7 +39,12 @@ export default function() {
                     </li>
                 </ul>                
             </div>
-        </div>  
+        </div>
+        <div className='bg-black bg-opacity-80 py-3'>
+            <p className='text-center text-white text-sm'>
+                &copy; {new Date().getFullYear()} Carnet Group. All rights reserved.
+            </p>
+        </div> 
     </footer>
   );
 }

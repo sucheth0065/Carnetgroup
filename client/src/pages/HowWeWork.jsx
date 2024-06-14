@@ -9,7 +9,6 @@ import Materal from '../assets/Materal.jpg'
 import FinalQuatation from '../assets/FinalQuatation.jpg'
 import Execution from '../assets/Execution.jpg'
 import Final from '../assets/Final.jpg'
-import BgOfHowWeWork from '../assets/BgOfHowWeWork.jpg'
 import HowWeWork1 from '../assets/HowWeWork.jpg'
 
 export default function HowWeWork() {

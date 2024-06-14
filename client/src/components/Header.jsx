@@ -41,9 +41,14 @@ export default function Header() {
                 OUR SERVICES
               </li>
             </Link>
-            <Link to="/sign-in">
+            {/* <Link to="/sign-in">
               <li className="hidden sm:inline text-orange-600 hover:underline  text-xl">
                 SIGN IN{" "}
+              </li>
+            </Link> */}
+            <Link to="/contactus">
+              <li className="hidden sm:inline text-orange-600 hover:underline  text-xl">
+                CONTACT US
               </li>
             </Link>
             <Link to="/sign-up">
