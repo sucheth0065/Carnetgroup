@@ -21,22 +21,30 @@ export default function() {
             <div className='flex-col text-white'>
                 <h1 className='font-bold text-xl text-orange-400'>Contact Us : </h1>
                 <ul className='space-y-2'>
-                    <li className='flex items-center'>
-                        <FaInstagram className='mr-2' />
-                        <span className='font-semibold '>Instagram</span>
-                    </li>
-                    <li className='flex items-center'>
-                        <FaFacebook className='mr-2' />
-                        <span className='font-semibold'>Facebook</span>
-                    </li>
-                    <li className='flex items-center'>
-                        <FaYoutube className='mr-2' />
-                        <span className='font-semibold'>YouTube</span>
-                    </li>
-                    <li className='flex items-center'>
-                        <FaLinkedin className='mr-2' />
-                        <span className='font-semibold'>LinkedIn</span>
-                    </li>
+                    <a href='https://www.instagram.com/carnet_design_studio/' target='_blank' rel='noopener noreferrer'>
+                        <li className='flex items-center'>
+                            <FaInstagram className='mr-2' />
+                            <span className='font-semibold'>Instagram</span>
+                        </li>
+                    </a>
+                    <a href='https://www.facebook.com/carnetdesignstudio/' target='_blank' rel='noopener noreferrer'>
+                        <li className='flex items-center'>
+                            <FaFacebook className='mr-2' />
+                            <span className='font-semibold'>Facebook</span>
+                        </li>
+                    </a>
+                    <a href='https://www.youtube.com/channel/UC85jAC7iolo4V3zU6p1qmVA' target='_blank' rel='noopener noreferrer'> 
+                        <li className='flex items-center'>
+                            <FaYoutube className='mr-2' />
+                            <span className='font-semibold'>YouTube</span>
+                        </li>
+                    </a>
+                    <a href='https://www.linkedin.com/company/carnet-design-studio/' target='_blank' rel='noopener noreferrer'>
+                        <li className='flex items-center'>
+                            <FaLinkedin className='mr-2' />
+                            <span className='font-semibold'>LinkedIn</span>
+                        </li>
+                    </a>
                 </ul>                
             </div>
         </div>
