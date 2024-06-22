@@ -1,6 +1,7 @@
 import React from 'react';
 import BgOfHowWeWork from '../assets/BgOfHowWeWork.jpg';
 import '../About.css'
+import { Link } from 'react-router-dom';
 
 export default function About() {
   return (
@@ -62,7 +63,9 @@ export default function About() {
         <h3 className='flex justify-center'>OUR SPECIALTIES</h3>
       </div>
       <div className='bg-orange-500 h-28 flex justify-center'>
+        <Link to="/ContactUs">
         <button className='border-solid border-2 border-black h-10 w-36 mt-8 hover:bg-black hover:text-white hover:rounded-xl hover:duration-75'>TALK WITH US</button>
+        </Link>
       </div>
     </div>
   );

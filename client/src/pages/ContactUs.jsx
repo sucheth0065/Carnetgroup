@@ -1,6 +1,7 @@
 import React from "react";
 import contact from '../assets/contact.jpg';
 import { GoogleMap, LoadScript, Marker } from '@react-google-maps/api';
+import Final from '../assets/Final.jpg'
 
 const containerStyle = {
   width: '100%',
@@ -24,15 +25,20 @@ export default function ContactUs() {
       <div className="bg-slate-50 p-6">
         
       </div>
-      <div className="h-screen bg-slate-500 flex">
-        <div className="h-auto w-1/4 ml-12 flex flex-col justify-center">
-            <form className='flex flex-col gap-4'>
-                <h1 className='text-3xl text-center font-semibold mt-5 mb-2 font-serif'>Send Us Message</h1>
+      <div className="h-auto bg-black opacity-95 flex">
+        <div className="w-1/2">
+          <img src={Final} alt="step" className='h-full w-auto rounded-lg p-10' />
+        </div>
+        <div className="w-1/2">
+          <div className="flex flex-col justify-center m-10 pt-40">
+            <form className='flex flex-col gap-4 ml-10'>
+                <h1 className='text-xl text-center font-semibold mt-5 mb-2 font-serif text-white'>Send Us Message</h1>
                 <input type="text" placeholder="Username" className="border p-3 rounded-lg font-serif" id="username" />
                 <input type='email' placeholder='email' className='border p-3 rounded-lg font-serif' id='email'/>
-                <input type='password' placeholder='password' className='border p-3 rounded-lg font-serif' id='password'/>
+                <input type="tel" placeholder="Mobile number" className="border p-3 rounded-lg font-serif" pattern="[0-9]{10}" id="mobile" required/>
                 <button className='bg-orange-500 text-white font-serif p-3 rounded-lg uppercase hover:opacity-90 disabled:opacity-80 mb-10'>Submit</button>
             </form>
+          </div>
         </div>
       </div>
     </div>

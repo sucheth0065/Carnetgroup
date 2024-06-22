@@ -1,25 +1,33 @@
 import React from 'react'
-import { FaInstagram, FaFacebook, FaYoutube, FaLinkedin } from 'react-icons/fa';
+import { FaInstagram, FaFacebook, FaYoutube, FaLinkedin} from 'react-icons/fa';
+import { FaXTwitter } from "react-icons/fa6";
 
 export default function() {
   return (
     <footer className='bg-black bg-opacity-90'>
-        <div className='flex justify-between items-center max-w-6xl  mx-auto p-3'>
-            <div className='font-semibold text-2xl text-white'>
+        <div className='flex justify-between items-center max-w-6xl  mx-auto pt-10 pb-10 pl-0'>
+            <div className='text-white flex flex-col w-1/3'>
                 <h1 className="font-bold text-sm sm:text-4xl flex flex-wrap">
-                    <span className="text-orange-500">Carnet</span>
-                    <span className="text-orange-500">Group</span>
-                </h1>   
-                <h1 className='pt-3'>Indian's No:1 Interior Designer</h1>
+                    <span className="text-orange-500">Carnet Design Studio</span>
+                </h1>
+                <div className='mt-2'>
+                <p>Carnet Design Studio is one of the finest interior design studios in Hyderabad where you can turn your dream come true. We turn your ideas into reality, and our creative designers can transform a simple space into a modern and appealing one. As an interior design company, we think that beauty can be found anywhere, but it needs the correct vision to discover it. Our end-to-end interior design services can remodel your little area into a luxurious haven.</p>
+                </div>
             </div>
             <div className='flex-col w-1/3 text-white'>
-                <h3 className='font-bold text-orange-400'>Address: </h3>
-                <p>3rd Floor, Sahiti Sudha Square, Beside KIMS Hospital, Telangana, 500084. </p>
-                <h2 className='font-bold mt-3 text-orange-400' >Mobile Number : </h2>
-                <p className='font-semibold text-xl'>+91 XXXXXXXXX</p>
+                <h3 className='font-bold text-xl text-orange-500'>CONTACT US: </h3>
+                <p>3rd Floor, Sahiti Sudha Square, Beside KIMS Hospital, Hyderabad, Telangana, 500084. </p>
+                <div className='flex mt-6'>
+                    <h2 className='font-bold text-orange-500 flex-row' >PHONE: </h2>
+                    <p className='font-semibold text-s flex-row pl-2'>+91 XXXXXXXXX</p>
+                </div>
+                <div className='flex mt-2'>
+                    <h2 className='font-bold text-orange-500 flex-row' >EMAIL: </h2>
+                    <p className='font-semibold text-s flex-row pl-2'>carnetdesignstudio@gmail.com</p>
+                </div>
             </div>
             <div className='flex-col text-white'>
-                <h1 className='font-bold text-xl text-orange-400'>Contact Us : </h1>
+                <h1 className='font-bold text-xl text-orange-500'>Follow us: </h1>
                 <ul className='space-y-2'>
                     <a href='https://www.instagram.com/carnet_design_studio/' target='_blank' rel='noopener noreferrer'>
                         <li className='flex items-center'>
@@ -45,7 +53,13 @@ export default function() {
                             <span className='font-semibold'>LinkedIn</span>
                         </li>
                     </a>
-                </ul>                
+                    <a href='https://x.com/CDS1224' target='_blank' rel='noopener noreferrer'>
+                        <li className='flex items-center'>
+                            <FaXTwitter className='mr-2' />
+                            <span className='font-semibold'>X</span>
+                        </li>
+                    </a>
+                </ul>               
             </div>
         </div>
         <div className='bg-black bg-opacity-80 py-3'>
