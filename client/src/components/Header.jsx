@@ -20,25 +20,25 @@ export default function Header() {
             </h1>
           </Link>
         </div>
-        <div className="flex items-center justify-end ">
+        <div className="flex items-center justify-end">
           <ul className="flex gap-6 items-center">
             <Link to="/home">
-              <li className="hidden sm:inline text-orange-600 hover:underline text-xl ">
+              <li className="hidden sm:inline text-orange-600 hover:text-green-600 text-xl ">
                 HOME
               </li>
             </Link>
             <Link to="/about">
-              <li className="hidden sm:inline text-orange-600 hover:underline  text-xl">
+              <li className="hidden sm:inline text-orange-600 hover:text-green-600 text-xl">
                 ABOUT
               </li>
             </Link>
             <Link to="/howwework">
-              <li className="hidden sm:inline text-orange-600 hover:underline text-xl">
+              <li className="hidden sm:inline text-orange-600 hover:text-green-600 text-xl">
                 HOW WE WORK
               </li>
             </Link>
             <Link to="/ourservices">
-              <li className="hidden sm:inline text-orange-600 hover:underline  text-xl">
+              <li className="hidden sm:inline text-orange-600 hover:text-green-600 text-xl">
                 OUR SERVICES
               </li>
             </Link>
@@ -48,12 +48,12 @@ export default function Header() {
               </li>
             </Link> */}
             <Link to="/contactus">
-              <li className="hidden sm:inline text-orange-600 hover:underline  text-xl">
+              <li className="hidden sm:inline text-orange-600 hover:text-green-600 text-xl">
                 CONTACT US
               </li>
             </Link>
             <Link to="/sign-up">
-              <li className="hidden sm:inline text-orange-600 hover:underline  text-xl">
+              <li className="hidden sm:inline text-orange-600 hover:text-green-600 text-xl">
                 SIGN UP
               </li>
             </Link>
