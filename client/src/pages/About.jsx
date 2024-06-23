@@ -2,10 +2,16 @@ import React from 'react';
 import BgOfHowWeWork from '../assets/BgOfHowWeWork.jpg';
 import '../About.css'
 import { Link } from 'react-router-dom';
+import Livingroom5 from '../assets/Livingroom5.jpg'
+import { TbTargetArrow } from "react-icons/tb";
+import { GiBinoculars } from "react-icons/gi";
 
 export default function About() {
   return (
-    <div className='mt-32'>
+    <div className='mt-24'>
+      <div className='h-80'>
+        <img src={Livingroom5} className='h-auto w-screen'/>
+      </div>
       <div className='flex flex-row'>
         <div className='w-1/2 flex items-center justify-center relative' class='about-img'>
           <img src={BgOfHowWeWork} alt='Image description' className='h-96' class='img'/>
@@ -59,10 +65,25 @@ export default function About() {
           </p>
         </div>
       </div>
-      <div class='sp'>
-        <h3 className='flex justify-center'>OUR SPECIALTIES</h3>
+      <div className='h-auto flex flex-row'>
+        <div className='h-auto w-1/2 bg-orange-600'>
+          <li className='flex items-center mt-10 pl-60'>
+            <TbTargetArrow className='mr-4' size={78} />
+            <span className='text-3xl text-center font-semibold font-serif text-white'>Mission</span>
+          </li>
+          <div className='ml-8 mb-6 mr-8 flex justify-center text-white text-xl p-10 font-serif'>
+            <h2>Our mission is to deliver exceptional interior design services that elevate our clients' concepts and branding with innovative, customized solutions. We are committed to consistently creating inspiring spaces that enhance work, life, and play. By seamlessly blending relatable motifs from our clients' unique cultures and lifestyles with our premium design aesthetic, we ensure every project not only meets but exceeds expectations, bringing visions to life with unparalleled quality and creativity.</h2>
+          </div> 
+        </div>
+        <div className='h-auto w-1/2 bg-green-500'>
+          <li className='flex items-center mt-10 pl-60'>
+            <GiBinoculars className='mr-4' size={78} />
+            <span className='text-3xl text-center font-semibold font-serif text-black'>Vision</span>
+          </li>
+          <h2 className='ml-8 mb-6 mr-8 flex justify-center text-black text-xl p-10 font-serif'>Our goal is to become the premier interior design firm, known for our innovative and functional designs that enhance the brand value of our esteemed clients. We aim for steady operational growth across Andhra Pradesh and Telangana, establishing ourselves as the go-to experts for expressive, high-quality interior décor.</h2> 
+        </div>
       </div>
-      <div className='bg-orange-500 h-28 flex justify-center'>
+      <div className='bg-rose-400 h-28 flex justify-center'>
         <Link to="/ContactUs">
         <button className='border-solid border-2 border-black h-10 w-36 mt-8 hover:bg-black hover:text-white hover:rounded-xl hover:duration-75'>TALK WITH US</button>
         </Link>

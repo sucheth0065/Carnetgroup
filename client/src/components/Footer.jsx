@@ -23,40 +23,44 @@ export default function() {
                 </div>
                 <div className='flex mt-2'>
                     <h2 className='font-bold text-orange-500 flex-row' >EMAIL: </h2>
-                    <p className='font-semibold text-s flex-row pl-2'>carnetdesignstudio@gmail.com</p>
+                    <a  href="https://mail.google.com/mail/?view=cm&fs=1&to=belidesujithkumar@gmail.com" target="_blank" rel="noopener noreferrer" className='font-semibold text-s flex-row pl-2'>carnetdesignstudio@gmail.com</a>
+                </div>
+                <div className='flex mt-2'>
+                    <h2 className='font-bold text-orange-500 flex-row' >WhatsApp: </h2>
+                    <a  href="https://wa.me/7993084961?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" className='font-semibold text-s flex-row pl-2'>Carnet Design Studio</a>
                 </div>
             </div>
             <div className='flex-col text-white'>
-                <h1 className='font-bold text-xl text-orange-500'>Follow us: </h1>
-                <ul className='space-y-2'>
+                <h1 className='font-bold text-2xl text-orange-500'>Follow us: </h1>
+                <ul className='mt-3'>
                     <a href='https://www.instagram.com/carnet_design_studio/' target='_blank' rel='noopener noreferrer'>
-                        <li className='flex items-center'>
-                            <FaInstagram className='mr-2' />
-                            <span className='font-semibold'>Instagram</span>
+                        <li className='flex items-center mb-3'>
+                            <FaInstagram className='mr-2' size={28} />
+                            <span className='font-semibold text-l'>Instagram</span>
                         </li>
                     </a>
                     <a href='https://www.facebook.com/carnetdesignstudio/' target='_blank' rel='noopener noreferrer'>
-                        <li className='flex items-center'>
-                            <FaFacebook className='mr-2' />
-                            <span className='font-semibold'>Facebook</span>
+                        <li className='flex items-center mb-3'>
+                            <FaFacebook className='mr-2' size={26} />
+                            <span className='font-semibold text-l'>Facebook</span>
                         </li>
                     </a>
                     <a href='https://www.youtube.com/channel/UC85jAC7iolo4V3zU6p1qmVA' target='_blank' rel='noopener noreferrer'> 
-                        <li className='flex items-center'>
-                            <FaYoutube className='mr-2' />
-                            <span className='font-semibold'>YouTube</span>
+                        <li className='flex items-center mb-3'>
+                            <FaYoutube className='mr-2' size={26}/>
+                            <span className='font-semibold text-l'>YouTube</span>
                         </li>
                     </a>
                     <a href='https://www.linkedin.com/company/carnet-design-studio/' target='_blank' rel='noopener noreferrer'>
-                        <li className='flex items-center'>
-                            <FaLinkedin className='mr-2' />
-                            <span className='font-semibold'>LinkedIn</span>
+                        <li className='flex items-center mb-3'>
+                            <FaLinkedin className='mr-2' size={26} />
+                            <span className='font-semibold text-l'>LinkedIn</span>
                         </li>
                     </a>
                     <a href='https://x.com/CDS1224' target='_blank' rel='noopener noreferrer'>
                         <li className='flex items-center'>
-                            <FaXTwitter className='mr-2' />
-                            <span className='font-semibold'>X</span>
+                            <FaXTwitter className='mr-2' size={26} />
+                            <span className='font-semibold text-l'>X</span>
                         </li>
                     </a>
                 </ul>               

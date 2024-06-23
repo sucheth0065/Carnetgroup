@@ -9,7 +9,7 @@ export default function Header() {
       <div className="flex items-center m-3 ml-8 w-1/4">
         <img src={CDS1} className="h-14 w-auto rounded-md" alt="Carnet Logo"/>
         <Link to="/">
-          <h1 className="font-bold text-sm sm:text-2xl flex flex-wrap flex-col">
+          <h1 className="font-bold text-sm sm:text-3xl flex flex-wrap flex-col">
             <span className="text-orange-500">CARNET</span>
             <span className="text-orange-500">DESIGN STUDIO</span>
           </h1>
