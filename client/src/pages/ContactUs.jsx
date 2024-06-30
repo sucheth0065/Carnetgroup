@@ -1,5 +1,4 @@
 import React from "react";
-import Mapbox from "../components/Mapbox.jsx";
 import contact from "../assets/contact.jpg";
 
 export default function CountactUs() {
