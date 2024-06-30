@@ -9,6 +9,9 @@ import { FaStar } from 'react-icons/fa';
 import BgOfHowWeWork from '../assets/BgOfHowWeWork.jpg'
 import { Link } from 'react-router-dom';
 import HomePageVideo from '../assets/HomePageVideo.mp4'
+import TvUnit from '../assets/TvUnit.jpg';
+import KH from '../assets/KH.jpg';
+
 //This is code
 
 const handleClick = () => {
@@ -145,7 +148,7 @@ export default function Home() {
             </Link>
         </div>
         <div className='bg-white rounded-lg overflow-hidden w-60 flex-col'>
-          <img src={BgOfHowWeWork} alt='Image description' className='w-full h-1/3 object-cover' loading='lazy'/>
+          <img src={KH} alt='Image description' className='w-full h-1/3 object-cover' loading='lazy'/>
           <h1 className='flex-col font-bold  text-center pt-4'>MODULAR KITCHEN</h1>
           <p className='text-justify'>Your Modular Kitchen would no longer be a space you would be wanting to leave! Our Exemplary years of Commitment are a Testimony to our Services that speaks volumes. Shape your space that reflects you and we are here to fulfil just that!</p>
           <Link to={'/ourservices'} className='flex justify-start p-4' onClick={handleClick} >
@@ -153,7 +156,7 @@ export default function Home() {
           </Link>
         </div>
         <div className='bg-white rounded-lg overflow-hidden w-60 flex-col'>
-          <img src={BgOfHowWeWork} alt='Image description' className='w-full h-1/3 object-cover' loading='lazy'/>
+          <img src={TvUnit} alt='Image description' className='w-full h-1/3 object-cover' loading='lazy'/>
           <h1 className='flex-col font-bold pl-4 pt-4 text-center'>TV UNIT</h1>
           <p className='text-justify'>Keep your popcorns ready to binge-watch your favorite Netflix shows in your bespoke Hall! We at Lush Interiors create memorable moments that never fade away.Our Reputed Interior Designers that take a deep dive into your imagination!</p>
           <Link to={'/ourservices'} className='flex justify-start p-4' onClick={handleClick} >

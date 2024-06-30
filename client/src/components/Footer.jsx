@@ -19,15 +19,15 @@ export default function() {
                 <p>3rd Floor, Sahiti Sudha Square, Beside KIMS Hospital, Hyderabad, Telangana, 500084. </p>
                 <div className='flex mt-6'>
                     <h2 className='font-bold text-orange-500 flex-row' >PHONE: </h2>
-                    <p className='font-semibold text-s flex-row pl-2'>+91 XXXXXXXXX</p>
+                    <p className='font-semibold text-s flex-row pl-2'>+91 9030069444</p>
                 </div>
                 <div className='flex mt-2'>
                     <h2 className='font-bold text-orange-500 flex-row' >EMAIL: </h2>
-                    <a  href="https://mail.google.com/mail/?view=cm&fs=1&to=belidesujithkumar@gmail.com" target="_blank" rel="noopener noreferrer" className='font-semibold text-s flex-row pl-2'>carnetdesignstudio@gmail.com</a>
+                    <a  href="https://mail.google.com/mail/?view=cm&fs=1&to=carnetdesignstudio@gmail.com" target="_blank" rel="noopener noreferrer" className='font-semibold text-s flex-row pl-2'>carnetdesignstudio@gmail.com</a>
                 </div>
                 <div className='flex mt-2'>
                     <h2 className='font-bold text-orange-500 flex-row' >WhatsApp: </h2>
-                    <a  href="https://wa.me/7993084961?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" className='font-semibold text-s flex-row pl-2'>Carnet Design Studio</a>
+                    <a  href="https://wa.me/903006944?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" className='font-semibold text-s flex-row pl-2'>Carnet Design Studio</a>
                 </div>
             </div>
             <div className='flex-col text-white'>
@@ -68,7 +68,7 @@ export default function() {
         </div>
         <div className='bg-black bg-opacity-80 py-3'>
             <p className='text-center text-white text-sm'>
-                &copy; {new Date().getFullYear()} Carnet Group. All rights reserved.
+                &copy; Copyright {new Date().getFullYear()} - Carnet Design Studio. All rights reserved | Designed By S&S WebElite
             </p>
         </div> 
     </footer>
