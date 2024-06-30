@@ -11,7 +11,13 @@ import { Link } from 'react-router-dom';
 import HomePageVideo from '../assets/HomePageVideo.mp4'
 import TvUnit from '../assets/TvUnit.jpg';
 import KH from '../assets/KH.jpg';
-
+import idea from '../assets/idea-icon.jpg';
+import design from '../assets/design-thinking-icon.jpg';
+import ind from '../assets/interior-icon.jpg';
+import hand from '../assets/hand-icon.jpg';
+import quality from '../assets/quality-icon.jpg';
+import quick from '../assets/quick-icon.jpg';
+import Reviews from "../components/Reviews.jsx";
 //This is code
 
 const handleClick = () => {
@@ -26,30 +32,30 @@ export default function Home() {
           <video className="background-video" src={HomePageVideo} autoPlay loop muted />
         </div>
       </div>
-      <div className='bg-zinc-950  flex justify-between items-center p-3'>
-        <div className='flex-col ml-6 item-center'>
-          <MdLightbulbOutline className="text-orange-400 text-6xl mb-3 ml-5" />
-          <h4  className='w-3/4 font-medium text-white'>INNOVATIVE IDEAS & DESIGN</h4>
+      <div className='bg-gradient-to-r from-orange-400 to-red-400 flex justify-between items-center p-3'>
+        <div className='flex-col ml-6 items-center'>
+          <img src={idea} className='h-16 w-16 ml-4 mb-2' loading='lazy' style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(20deg)' }}/>
+          <h4 className='w-3/4 font-bold text-white'>INNOVATIVE IDEAS & DESIGN</h4>
         </div>
-        <div className='flex-col ml-6 item-center'>
-          <FaCalendarAlt className="text-orange-400 text-6xl mb-3 ml-8" />
-          <h4 className='w-3/4 font-medium text-white'>PROPER PLANNING AND BUDGETING</h4>
+        <div className='flex-col ml-6 items-center'>
+          <img src={design} className='h-16 w-16 ml-4 mb-2' loading='lazy' style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(20deg)' }}/>
+          <h4 className='w-3/4 font-bold text-white'>PROPER PLANNING AND BUDGETING</h4>
         </div>
-        <div className='flex-col ml-6 item-center'>
-          <FaHome className="text-orange-500 text-6xl mb-3 ml-4 " />
-          <h4 className='w-3/4 font-medium text-white'>BRILLIANT SPACE UTILIZATION</h4>
+        <div className='flex-col ml-6 items-center'>
+          <img src={ind} className='h-16 w-20 ml-3 mb-2' loading='lazy' style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(20deg)' }}/>
+          <h4 className='w-3/4 font-bold text-white'>BRILLIANT SPACE UTILIZATION</h4>
         </div>
-        <div className='flex-col ml-6 item-center'>
-          <FaRupeeSign className="text-orange-500 text-6xl mb-3" />
-          <h4 className='w-3/4 font-medium text-white'>AFFORDABLE PRICE</h4>
+        <div className='flex-col ml-6 items-center'>
+          <img src={hand} className='h-16 w-20 ml-3 mb-2' loading='lazy' style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(20deg)' }}/>
+          <h4 className='w-3/4 font-bold text-white'>AFFORDABLE PRICE</h4>
         </div>
-        <div className='flex-col ml-6 item-center'>
-          <FaStar className="text-orange-500 text-6xl mb-3" /> 
-          <h4 className='w-3/4 font-medium text-white'>QUALITY WORK</h4>
+        <div className='flex-col ml-6 items-center'>
+          <img src={quality} className='h-14 w-16 ml-2 mb-2' loading='lazy' style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(20deg)' }}/>
+          <h4 className='w-3/4 font-bold text-white'>QUALITY WORK</h4>
         </div>
-        <div className='flex-col ml-6 item-center'>
-          <MdAccessTime  className='text-6xl text-orange-500 mb-3'/> 
-          <h4 className='w-3/4 font-medium text-white'> ON TIME DELIVERY </h4>
+        <div className='flex-col ml-6 items-center'>
+          <img src={quick} className='h-14 w-14 ml-3 mb-2' loading='lazy' style={{ filter: 'brightness(0) invert(1) sepia(1) saturate(5) hue-rotate(20deg)' }}/>
+          <h4 className='w-3/4 font-bold text-white'>ON TIME DELIVERY</h4>
         </div> 
       </div>
       <div className='h-80 flex justify-between items-center p-3'>
@@ -126,9 +132,13 @@ export default function Home() {
           </div>
         </Link>
       </div>
-      <div className='bg-orange-400 h-40 flex justify-center items-center'>
-        <h1 className='text-center text-white text-2xl font-bold mr-5'>Search Our Projects</h1>
-        <button className='border border-gray-600 rounded-md px-4 py-2 bg-white text-gray-600 font-semibold hover:bg-gray-100 transition duration-300'>Projects</button>
+      <div className="bg-gradient-to-r from-orange-400 to-red-400 h-40 flex justify-center items-center shadow-lg rounded-lg">
+        <h1 className="text-center text-white text-3xl font-extrabold mr-5 drop-shadow-md">Interior Inspirations</h1>
+        <Link to={'/ourdesigns'} onClick={handleClick}>
+          <button className="border border-orange-500 rounded-lg px-5 py-2 bg-white text-orange-500 font-semibold hover:bg-orange-500 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
+          Our Designs
+          </button>
+        </Link>
       </div>
       <div className='flex flex-row items-center justify-center space-x-4 mt-5 mb-5 bg-h-full w-full p-10 gap-5'>
           <div className='bg-white rounded-lg overflow-hidden w-60  flex-col'>
@@ -171,6 +181,9 @@ export default function Home() {
           </div>
         </div> */}
     </div>
+    <div>
+        <Reviews />
+      </div>
   </div>
 
   )
