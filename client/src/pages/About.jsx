@@ -7,6 +7,9 @@ import { TbTargetArrow } from "react-icons/tb";
 import { GiBinoculars } from "react-icons/gi";
 
 export default function About() {
+  const handleClick = () =>{
+    window.scrollTo(0, 0);
+  }
   return (
     <div className='mt-24'>
       <div className='h-80'>
@@ -84,7 +87,7 @@ export default function About() {
         </div>
       </div>
       <div className='bg-gradient-to-r from-green-300 to-orange-400 h-28 flex justify-center'>
-        <Link to="/ContactUs">
+        <Link to="/ContactUs" onClick={handleClick}>
         <button className='border-solid border-2 border-black h-10 w-36 mt-8 hover:bg-black hover:text-white hover:rounded-xl hover:duration-75'>TALK WITH US</button>
         </Link>
       </div>
