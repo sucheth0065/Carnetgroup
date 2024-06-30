@@ -1,65 +1,22 @@
 import React from "react";
-import Mapbox from "../components/Mapbox.jsx";
 import contact from "../assets/contact.jpg";
 
 export default function CountactUs() {
   return (
     <div>
-      <section className="w-full max-w-2xl mx-auto py-12 md:py-24">
-        <div className="px-6 md:px-0 bg-lightPeach text-darkBrown py-2 mt-2">
-          <div className="space-y-4 text-center">
-            <h2 className="text-3xl font-bold">Get in Touch</h2>
-            <p className="opacity-65">
-              Fill out the form below and we'll get back to you as soon as
-              possible.
-            </p>
-          </div>
-          <form className="mt-8 space-y-6">
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
-              <div className="space-y-2">
-                <label htmlFor="name">Name *</label>
-                <input
-                  id="name"
-                  placeholder="Enter your name"
-                  className="border p-3 rounded-lg w-80 bg-[#ffcc99] border-gray-300"
-                  required
-                />
-              </div>
-              <div className="space-y-2">
-                <label htmlFor="email">Email *</label>
-                <input
-                  id="email"
-                  type="email"
-                  placeholder="Enter your email"
-                  className="border p-3 rounded-lg w-80  bg-[#ffcc99] border-gray-300"
-                  required
-                />
-              </div>
-            </div>
-            <div className="space-y-2">
-              <label htmlFor="phone">Phone *</label>
-              <input
-                id="phone"
-                type="tel"
-                placeholder="Enter your phone number"
-                className="border p-3 rounded-lg w-full  bg-[#ffcc99] border-gray-300"
-                required
-              />
-            </div>
-            <button
-              type="submit"
-              className="w-full bg-Coral text-white rounded-lg h-10 "
-            >
-              Submit
-            </button>
-          </form>
+      <div className='h-90 w-full mt-24'>
+        <img src={contact} className='h-80 w-screen'/>
+      </div>
+      <div className="h-28 w-full bg-gradient-to-r from-gray-800 to-black text-white text-xl font-bold flex items-center justify-center">
+        <div className="text-center">
+          <h1>Work with us to design</h1>
+          <h1>the home you've always wanted</h1>
         </div>
-      </section>
-      <section className="mb-7 ml-16">
-        <div>
+      </div>
+      <div>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30443.068329097256!2d78.38414625233057!3d17.489195388562898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91ec0162f43d%3A0x3288c6fe4358cf48!2sKukatpally%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1719718781607!5m2!1sen!2sin"
-            width="600"
+            width="100%"
             height="450"
             style={{ border: 0 }}
             allowFullScreen=""
@@ -67,7 +24,71 @@ export default function CountactUs() {
             referrerPolicy="no-referrer-when-downgrade"
           ></iframe>
         </div>
-      </section>
-    </div>
+      <div className="h-auto flex flex-row">
+        <div className="w-1/2 bg-gradient-to-r from-gray-700 to-gray-900 text-white p-10 shadow-lg flex flex-col justify-center items-center">
+          <div className="text-center space-y-4">
+            <h3 className="font-bold text-2xl text-orange-500">CONTACT US</h3>
+            <p className="text-lg">3rd Floor, Sahiti Sudha Square, Beside KIMS Hospital, Hyderabad, Telangana, 500084.</p>
+            <div className="flex flex-col space-y-2">
+              <div className="flex items-center justify-center">
+                <h2 className="font-bold text-orange-500">OPEN:</h2>
+                <p className="font-semibold pl-2">MONDAY-SUNDAY 8am to 10pm</p>
+              </div>
+              <div className="flex items-center justify-center">
+                <h2 className="font-bold text-orange-500">PHONE:</h2>
+                <p className="font-semibold pl-2">+91 9030069444</p>
+              </div>
+              <div className="flex items-center justify-center">
+                <h2 className="font-bold text-orange-500">EMAIL:</h2>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=carnetdesignstudio@gmail.com" target="_blank" rel="noopener noreferrer" className="font-semibold pl-2 underline">carnetdesignstudio@gmail.com</a>
+              </div>
+              <div className="flex items-center justify-center">
+                <h2 className="font-bold text-orange-500">WhatsApp:</h2>
+                <a href="https://wa.me/903006944?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" className="font-semibold pl-2 underline">Carnet Design Studio</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="w-1/2 bg-gradient-to-br from-orange-400 to-red-400 text-black p-8 shadow-lg">
+          <div className="space-y-4 text-center">
+            <h2 className="text-2xl font-extrabold pt-3 text-black">Simply complete this form, and we'll get in touch with you shortly.</h2>
+            <p className="opacity-80 text-lg text-slant-500">
+              TELANGANA | ANDHRA PRADESH 
+            </p>
+          </div>
+          <form className="mt-8 space-y-6 mb-5">
+            <div className="grid sm:grid-cols-2 gap-6">
+              <div className="space-y-2">
+                <label htmlFor="name" className="block text-lg font-medium text-slant-500">Name *</label>
+                <input id="name" placeholder="Enter your name"
+                  className="border p-3 rounded-lg w-full bg-[#FFE4C4] border-gray-300 focus:ring-2 focus:ring-orange-300 outline-none text-darkBrown placeholder-darkBrown"
+                  required
+                />
+              </div>
+              <div className="space-y-2">
+                <label htmlFor="email" className="block text-lg font-medium text-slant-500">Email *</label>
+                <input id="email" type="email" placeholder="Enter your email"
+                  className="border p-3 rounded-lg w-full bg-[#FFE4C4] border-gray-300 focus:ring-2 focus:ring-orange-300 outline-none text-darkBrown placeholder-darkBrown"
+                  required
+                />
+              </div>
+            </div>
+            <div className="space-y-2">
+              <label htmlFor="phone" className="block text-lg font-medium text-slant-500">Phone *</label>
+              <input id="phone" type="tel" placeholder="Enter your phone number"
+                className="border p-3 rounded-lg w-full bg-[#FFE4C4] border-gray-300 focus:ring-2 focus:ring-orange-300 outline-none text-darkBrown placeholder-darkBrown"
+                required
+              />
+            </div>
+            <button
+            type="submit"
+            className="w-full bg-orange-500 text-white rounded-lg h-12 font-bold hover:bg-orange-600 transition duration-300"
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+      </div>
   );
 }
