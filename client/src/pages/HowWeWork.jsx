@@ -11,7 +11,7 @@ import Final from '../assets/Livingroom2.jpg'
 
 export default function HowWeWork() {
   return ( 
-<div className="w-fit mx-10 flex-grow mt-24">
+    <div className="w-fit mx-10 flex-grow mt-24">
       <div className="h-80 mt-2 flex flex-col justify-center pl-20 bg-white">
         <h3 className="font-semibold text-2xl pb-5">Interior Design Process</h3>
         <h1 className="font-bold text-5xl ">How We Work</h1>
