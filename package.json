@@ -15,7 +15,9 @@
     "mongoose": "^8.4.0",
     "nodemon": "^3.0.1",
     "react-map-gl": "^7.1.7",
-    "react-router-dom": "^6.23.1"
+    "react-router-dom": "^6.23.1",
+    "react-slick": "^0.30.2",
+    "slick-carousel": "^1.8.1"
   },
   "name": "myproject",
   "version": "1.0.0",

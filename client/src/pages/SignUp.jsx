@@ -4,6 +4,7 @@ import axios from "axios";
 
 export default function SignUp() {
   const [formData, setFormData] = useState({});
+  const [savedData, setSavedData] = useState(null);
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -12,7 +13,7 @@ export default function SignUp() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    const response = axios.post("/signup", { ...formData });
+    axios.post("/signup", { ...formData });
   };
 
   return (

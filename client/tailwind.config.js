@@ -3,6 +3,10 @@ export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
+      fontFamily: {
+        serif: ["Playfair Display", "serif"],
+        sans: ["Lato", "sans-serif"],
+      },
       colors: {
         lightPeach: "#FFE5B4",
         darkBrown: "#5D4037",
