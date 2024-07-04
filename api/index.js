@@ -20,6 +20,14 @@ mongoose
 
 const app = express();
 app.use(express.json());
+app.use((req, res, next) => {
+  res.header("Access-Control-Allow-Origin", "*");
+  res.header(
+    "Access-Control-Allow-Headers",
+    "Origin, X-Requested-With, Content-Type, Accept"
+  );
+  next();
+});
 app.use(
   cors({
     credentials: true,
@@ -35,15 +43,17 @@ app.get("/test", (req, res) => {
 
 app.post("/signup", async (req, res) => {
   const { username, email, password, mobile } = req.body;
-
-  let userDoc = await User.create({
-    username,
-    email,
-    password: bcrypt.hashSync(password, bcryptSalt),
-    mobilenumber: mobile,
-  });
-
-  res.json(userDoc);
+  try {
+    let userDoc = await User.create({
+      username,
+      email,
+      password: bcrypt.hashSync(password, bcryptSalt),
+      mobilenumber: mobile,
+    });
+    res.status(200).json(userDoc);
+  } catch {
+    res.status(500).json({ error: error.message });
+  }
 });
 
 app.listen(3000, () => {
