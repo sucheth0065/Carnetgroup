@@ -7,7 +7,7 @@ const cors = require("cors");
 dotenv.config();
 
 const url =
-  "mongodb+srv://Sucheth:sucheth6500@cluster0.mebxuu9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+  "mongodb+srv://belidesujithkumar:sujith24@cluster0.11v88sx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose
   .connect(url)
