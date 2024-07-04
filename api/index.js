@@ -8,7 +8,7 @@ const cors = require("cors");
 dotenv.config();
 
 const url =
-  "mongodb+srv://belidesujithkumar:sujith24@cluster0.11v88sx.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
+  "mongodb+srv://Sucheth:sucheth6500@cluster0.mebxuu9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
 
 mongoose
   .connect(url)
@@ -82,6 +82,15 @@ app.post("/userform", async (req, res) => {
     res.status(200).json(inputDoc);
   } catch (error) {
     res.status(500).json({ error: error.message });
+  }
+});
+
+app.get("/userform", async (req, res) => {
+  try {
+    const forms = await UserForm.find();
+    res.json(forms);
+  } catch (err) {
+    res.status(500).json({ message: err.message });
   }
 });
 
