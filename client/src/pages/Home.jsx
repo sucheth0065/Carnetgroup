@@ -11,6 +11,8 @@ import hand from "../assets/hand-icon.jpg";
 import quality from "../assets/quality-icon.jpg";
 import quick from "../assets/quick-icon.jpg";
 import Reviews from "../components/Reviews.jsx";
+import Bedroom1 from "../assets/bedrooms1.jpg";
+import Living from "../assets/livingroom.jpg";
 //This is code
 
 const handleClick = () => {
@@ -192,15 +194,15 @@ export default function Home() {
           Interior Inspirations
         </h1>
         <Link to={"/ourdesigns"} onClick={handleClick}>
-          <button className="font-sans border border-orange-500 rounded-lg px-5 py-2 bg-white text-orange-500 font-semibold hover:bg-orange-500 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
+          <button className="font-sans border border-orange-500 rounded-lg px-5 py-2 bg-white text-orange-500 font-semibold hover:bg-orange-500 hover:text-white transition duration-300">
             Our Designs
           </button>
         </Link>
       </div>
       <div className="flex flex-row items-center justify-center space-x-4 mt-5 mb-5 bg-h-full w-full p-10 gap-5">
-        <div className="bg-white rounded-lg overflow-hidden w-60  flex-col">
+        <div className="rounded-lg overflow-hidden w-60  flex-col">
           <img
-            src={BgOfHowWeWork}
+            src={Living}
             alt="Image description"
             className="w-full h-1/3 object-cover"
             loading="lazy"
@@ -219,14 +221,14 @@ export default function Home() {
             className="flex justify-start p-4"
             onClick={handleClick}
           >
-            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white font-semibold hover:bg-black hover:text-white transition duration-300 ease-in-out transform hover:scale-105 shadow-md w-full">
+            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white hover:bg-orange-700">
               Read More
             </button>
           </Link>
         </div>
-        <div className="bg-white rounded-lg overflow-hidden w-60 flex-col">
+        <div className="rounded-lg overflow-hidden w-60 flex-col">
           <img
-            src={BgOfHowWeWork}
+            src={Bedroom1}
             alt="Image description"
             className="w-full h-1/3 object-cover"
             loading="lazy"
@@ -245,12 +247,12 @@ export default function Home() {
             className="flex justify-start p-4"
             onClick={handleClick}
           >
-            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white font-semibold hover:bg-black hover:text-white transition duration-300 ease-in-out transform hover:scale-105 shadow-md w-full">
+            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white hover:bg-orange-700">
               Read More
             </button>
           </Link>
         </div>
-        <div className="bg-white rounded-lg overflow-hidden w-60 flex-col">
+        <div className="rounded-lg overflow-hidden w-60 flex-col">
           <img
             src={KH}
             alt="Image description"
@@ -271,12 +273,12 @@ export default function Home() {
             className="flex justify-start p-4"
             onClick={handleClick}
           >
-            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white font-semibold hover:bg-black hover:text-white transition duration-300 ease-in-out transform hover:scale-105 shadow-md w-full">
+            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white hover:bg-orange-700">
               Read More
             </button>
           </Link>
         </div>
-        <div className="bg-white rounded-lg overflow-hidden w-60 flex-col">
+        <div className=" rounded-lg overflow-hidden w-60 flex-col">
           <img
             src={TvUnit}
             alt="Image description"
@@ -297,7 +299,7 @@ export default function Home() {
             className="flex justify-start p-4"
             onClick={handleClick}
           >
-            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white font-semibold hover:bg-black hover:text-white transition duration-300 ease-in-out transform hover:scale-105 shadow-md w-full">
+            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white hover:bg-orange-700">
               Read More
             </button>
           </Link>

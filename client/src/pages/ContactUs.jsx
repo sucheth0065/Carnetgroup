@@ -1,28 +1,16 @@
 import React from "react";
-import contact from "../assets/contact.jpg";
 
 export default function CountactUs() {
   return (
     <div>
-      <div className="mt-28">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30443.068329097256!2d78.38414625233057!3d17.489195388562898!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb91ec0162f43d%3A0x3288c6fe4358cf48!2sKukatpally%2C%20Hyderabad%2C%20Telangana!5e0!3m2!1sen!2sin!4v1719718781607!5m2!1sen!2sin"
-          width="100%"
-          height="450"
-          style={{ border: 0 }}
-          allowFullScreen=""
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-        ></iframe>
-      </div>
-      <div className="h-auto flex flex-row">
-        <div className="w-1/2 bg-gradient-to-br from-orange-300 to-red-400 text-black p-8 shadow-lg">
+      <div className="h-auto flex flex-row mt-24">
+        <div className="w-1/2 bg-gradient-to-br from-orange-400 to-red-400 text-black p-8 shadow-lg">
           <div className="space-y-4 text-center">
-            <h2 className="text-2xl font-extrabold pt-3 text-black">
-              Just fill this out, and we'll contact you
+            <h2 className="text-4xl font-extrabold pt-3 text-black">
+              Get in touch 
             </h2>
-            <p className="opacity-80 text-lg text-slant-500">
-              TELANGANA | ANDHRA PRADESH
+            <p className="opacity-80 text-2xl text-slant-500">
+              Fill out this form and we'll reach out 
             </p>
           </div>
           <form className="mt-8 space-y-6 mb-5">
@@ -121,6 +109,17 @@ export default function CountactUs() {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3805.8850520995734!2d78.36509497493655!3d17.46521498343536!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bcb93c3a68a9541%3A0x9e89cf74b28eb632!2sCARNET%20DESIGN%20STUDIO%20PVT%20LTD!5e0!3m2!1sen!2sin!4v1720089620608!5m2!1sen!2sin" 
+          width="100%"
+          height="450"
+          style={{ border: 0 }}
+          allowFullScreen=""
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </div>
   );

@@ -150,7 +150,7 @@ const DesignRequirementForm = () => {
       </div>
       <button
         type="submit"
-        className="w-full bg-orange-400 text-white p-2 rounded hover:bg-black"
+        className="w-full bg-orange-500 text-white p-2 rounded hover:bg-orange-700"
       >
         Submit
       </button>

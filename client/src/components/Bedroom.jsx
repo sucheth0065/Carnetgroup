@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
@@ -22,6 +23,9 @@ const photos = [
 ];
 
 const BedroomDesign = () => {
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
   const settings = {
     dots: true,
     infinite: true,
@@ -73,9 +77,11 @@ const BedroomDesign = () => {
         <h2 className="text-3xl font-bold mb-5">
           Interested in a Bedroom Makeover?
         </h2>
+        <Link to="/userform" onClick={handleClick}>
         <button className="px-6 py-3 bg-orange-500 text-white font-semibold rounded shadow-md hover:bg-orange-700 transition duration-300">
           Get a Quote
         </button>
+        </Link>
       </section>
     </div>
   );

@@ -9,11 +9,11 @@ const CardHeader = ({ children }) => (
 );
 
 const CardTitle = ({ children }) => (
-  <h3 className="card-title font-bold text-xl text-orange-600">{children}</h3>
+  <h3 className="card-title font-bold text-xl text-black">{children}</h3>
 );
 
 const CardContent = ({ children }) => (
-  <p className="card-content text-gray-700 text-sm mt-4">{children}</p>
+  <p className="card-content text-white text-sm mt-4">{children}</p>
 );
 
 const Reviews = () => {
@@ -22,20 +22,20 @@ const Reviews = () => {
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-4 text-center">
           <div className="space-y-2">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-orange-400">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-green-700">
               What Our Customers Say
             </h2>
-            <p className="max-w-[700px] text-gray-500 md:text-xl lg:text-base xl:text-xl">
+            <p className="max-w-[700px] text-gray-700 md:text-xl lg:text-base xl:text-xl">
               Hear from our satisfied customers about their experience with our
               interior design services.
             </p>
           </div>
         </div>
         <div className="mx-auto grid max-w-5xl gap-6 py-12 lg:grid-cols-2 lg:gap-12">
-          <div className="relative border rounded-lg h-40 p-4 border-orange-600 bg-gradient-to-r from-orange-100 to-orange-200 transition duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl">
+          <div className="relative border rounded-lg h-40 p-4 border-orange-600 bg-gradient-to-r from-orange-400 to-red-400 transition duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl">
             <Card>
               <CardHeader>
-                <CardTitle>Sarah Johnson</CardTitle>
+                <CardTitle>Srinivas</CardTitle>
               </CardHeader>
               <CardContent>
                 "The team at Interior Design Co. transformed my living room into
@@ -43,10 +43,10 @@ const Reviews = () => {
               </CardContent>
             </Card>
           </div>
-          <div className="relative border rounded-lg h-40 p-4 border-orange-600 bg-gradient-to-r from-orange-100 to-orange-200 transition duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl">
+          <div className="relative border rounded-lg h-40 p-4 border-orange-600 bg-gradient-to-r from-orange-400 to-red-400 transition duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl">
             <Card>
               <CardHeader>
-                <CardTitle>Michael Lee</CardTitle>
+                <CardTitle>Shiva Kumar</CardTitle>
               </CardHeader>
               <CardContent>
                 "I was amazed by the attention to detail and the personalized
@@ -55,10 +55,10 @@ const Reviews = () => {
               </CardContent>
             </Card>
           </div>
-          <div className="relative border rounded-lg h-40 p-4 border-orange-600 bg-gradient-to-r from-orange-100 to-orange-200 transition duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl">
+          <div className="relative border rounded-lg h-40 p-4 border-orange-600 bg-gradient-to-r from-orange-400 to-red-400 transition duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl">
             <Card>
               <CardHeader>
-                <CardTitle>Emily Parker</CardTitle>
+                <CardTitle>Venkatesh</CardTitle>
               </CardHeader>
               <CardContent>
                 "The team at Interior Design Co. listened to my needs and
@@ -67,10 +67,10 @@ const Reviews = () => {
               </CardContent>
             </Card>
           </div>
-          <div className="relative border rounded-lg h-40 p-4 border-orange-600 bg-gradient-to-r from-orange-100 to-orange-200 transition duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl">
+          <div className="relative border rounded-lg h-40 p-4 border-orange-600 bg-gradient-to-r from-orange-400 to-red-400 transition duration-300 transform hover:scale-105 shadow-lg hover:shadow-2xl">
             <Card>
               <CardHeader>
-                <CardTitle>Alex Chen</CardTitle>
+                <CardTitle>Kumari</CardTitle>
               </CardHeader>
               <CardContent>
                 "I was blown away by the creativity and professionalism of the

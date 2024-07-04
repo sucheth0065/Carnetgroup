@@ -11,6 +11,9 @@ import Final from "../assets/Livingroom2.jpg";
 import { Link } from "react-router-dom";
 
 export default function HowWeWork() {
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
   return (
     <div className="w-fit mx-10 flex-grow mt-24">
       <div className="h-80 mt-2 flex flex-col justify-center pl-20 bg-white">
@@ -45,7 +48,7 @@ export default function HowWeWork() {
             </p>
             <Link
               to="/contactus"
-              className="mt-4 px-10 py-2 bg-black text-white font-semibold rounded hover: transition duration-300 ease-in-out transform hover:scale-105 shadow-xl"
+              className="mt-4 px-10 py-2 bg-black text-white font-semibold rounded"
             >
               Request a Consultation
             </Link>
@@ -66,9 +69,11 @@ export default function HowWeWork() {
               Specify your interior design needs to receive an accurate price
               quote. Plan ahead and stay within your budget!
             </p>
-            <button className="mt-4 px-10 py-2 bg-black text-white font-semibold rounded hover: transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
-              Get a Quote
-            </button>
+            <Link
+              to="/Userform" onClick={handleClick}
+            ><button className="mt-4 px-10 py-2 bg-black text-white font-semibold rounded ">
+            Get a Quote
+          </button></Link>
           </div>
           <div className="h-80 w-1/2">
             <img
@@ -193,9 +198,12 @@ export default function HowWeWork() {
               execution viability. The final quotation will be the only price
               added to your tab. No hidden costs.
             </p>
-            <button className="mt-4 px-10 py-2 bg-black text-white font-semibold rounded hover: transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
+            <Link
+              to="/Userform" onClick={handleClick}>
+            <button className="mt-4 px-10 py-2 bg-black text-white font-semibold rounded ">
               Get a Quote
             </button>
+            </Link>
           </div>
         </div>
         <div className="h-80 mt-5 flex flex-row">

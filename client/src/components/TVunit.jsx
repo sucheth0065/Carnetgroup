@@ -7,6 +7,7 @@ import tvunits2 from "../assets/tvunits2.jpg";
 import tvunits3 from "../assets/tvuints3.jpg";
 import tvunits4 from "../assets/tvuints4.jpg";
 import tvunits5 from "../assets/tvuints5.jpg";
+import { Link } from "react-router-dom";
 
 const photos = [
   tvunits1,
@@ -17,6 +18,9 @@ const photos = [
 ]
 
 const TVUnitDesign = () => {
+  const handleClick = () => {
+    window.scrollTo(0, 0);
+  };
   const settings = {
     dots: true,
     infinite: true,
@@ -72,9 +76,11 @@ const TVUnitDesign = () => {
         <h2 className="text-3xl font-bold mb-5">
           Interested in a Custom TV Unit?
         </h2>
+        <Link to="/Userform" onClick={handleClick}>
         <button className="px-6 py-3 bg-orange-500 text-white font-semibold rounded shadow-md hover:bg-orange-700 transition duration-300">
           Get a Quote
         </button>
+        </Link>
       </section>
     </div>
   );

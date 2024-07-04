@@ -18,7 +18,7 @@ export default function OurServices() {
           transforms your home into a beautiful, functional oasis.
         </p>
         <Link
-          to="#"
+          to="/contactus"
           className="inline-flex h-10 items-center justify-center rounded-md bg-orange-500 text-white px-8 text-sm font-medium mt-3 ml-6"
         >
           Request a Consultation
