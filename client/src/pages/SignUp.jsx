@@ -12,7 +12,7 @@ export default function SignUp() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("/signup", { ...formData });
+    const response = axios.post("/signup", { ...formData });
   };
 
   return (
