@@ -194,7 +194,7 @@ export default function Home() {
           Interior Inspirations
         </h1>
         <Link to={"/ourdesigns"} onClick={handleClick}>
-          <button className="font-sans border border-orange-500 rounded-lg px-5 py-2 bg-white text-orange-500 font-semibold hover:bg-orange-500 hover:text-white transition duration-300">
+          <button className="font-sans border border-orange-500 rounded-lg px-5 py-2 bg-white text-orange-500 font-semibold hover:bg-orange-500 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
             Our Designs
           </button>
         </Link>
@@ -221,7 +221,7 @@ export default function Home() {
             className="flex justify-start p-4"
             onClick={handleClick}
           >
-            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white hover:bg-orange-700">
+            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white font-semibold hover:bg-orange-700 transition duration-300 ease-in-out transform hover:scale-105 shadow-md w-full">
               Read More
             </button>
           </Link>
@@ -247,7 +247,7 @@ export default function Home() {
             className="flex justify-start p-4"
             onClick={handleClick}
           >
-            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white hover:bg-orange-700">
+            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white font-semibold hover:bg-orange-700 transition duration-300 ease-in-out transform hover:scale-105 shadow-md w-full">
               Read More
             </button>
           </Link>
@@ -273,7 +273,7 @@ export default function Home() {
             className="flex justify-start p-4"
             onClick={handleClick}
           >
-            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white hover:bg-orange-700">
+            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white font-semibold hover:bg-orange-700 transition duration-300 ease-in-out transform hover:scale-105 shadow-md w-full">
               Read More
             </button>
           </Link>
@@ -299,7 +299,7 @@ export default function Home() {
             className="flex justify-start p-4"
             onClick={handleClick}
           >
-            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white hover:bg-orange-700">
+            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white font-semibold hover:bg-orange-700 transition duration-300 ease-in-out transform hover:scale-105 shadow-md w-full">
               Read More
             </button>
           </Link>
