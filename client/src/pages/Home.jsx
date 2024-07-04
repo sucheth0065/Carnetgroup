@@ -1,11 +1,4 @@
 import React from "react";
-
-import { FaHome } from "react-icons/fa";
-import { MdAccessTime } from "react-icons/md";
-import { MdLightbulbOutline } from "react-icons/md";
-import { FaCalendarAlt } from "react-icons/fa";
-import { FaRupeeSign } from "react-icons/fa";
-import { FaStar } from "react-icons/fa";
 import BgOfHowWeWork from "../assets/BgOfHowWeWork.jpg";
 import { Link } from "react-router-dom";
 import HomePageVideo from "../assets/HomePageVideo.mp4";
@@ -26,17 +19,15 @@ const handleClick = () => {
 
 export default function Home() {
   return (
-    <div>
-      <div style={{ width: "1920", height: "800" }}>
-        <div className="video-container">
+    <div className="font-sans bg-gray-100 text-gray-900">
+        <div className="relative h-screen w-full">
           <video
-            className="background-video"
+            className="absolute inset-0 w-full h-full object-cover"
             src={HomePageVideo}
             autoPlay
             loop
             muted
           />
-        </div>
       </div>
       <div className="bg-gradient-to-r from-orange-400 to-red-400 flex justify-between items-center p-3">
         <div className="flex-col ml-6 items-center">
@@ -197,7 +188,7 @@ export default function Home() {
           Interior Inspirations
         </h1>
         <Link to={"/ourdesigns"} onClick={handleClick}>
-          <button className="border border-orange-500 rounded-lg px-5 py-2 bg-white text-orange-500 font-semibold hover:bg-orange-500 hover:text-white transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
+          <button className="border border-orange-500 rounded-lg px-5 py-2 bg-white text-orange-500 font-semibold hover:bg-black hover:text-white transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
             Our Designs
           </button>
         </Link>
@@ -224,7 +215,7 @@ export default function Home() {
             className="flex justify-start p-4"
             onClick={handleClick}
           >
-            <button className="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-700 transition duration-300 w-full">
+            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white font-semibold hover:bg-black hover:text-white transition duration-300 ease-in-out transform hover:scale-105 shadow-md w-full">
               Read More
             </button>
           </Link>
@@ -250,7 +241,7 @@ export default function Home() {
             className="flex justify-start p-4"
             onClick={handleClick}
           >
-            <button className="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-700 transition duration-300 w-full">
+            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white font-semibold hover:bg-black hover:text-white transition duration-300 ease-in-out transform hover:scale-105 shadow-md w-full">
               Read More
             </button>
           </Link>
@@ -276,7 +267,7 @@ export default function Home() {
             className="flex justify-start p-4"
             onClick={handleClick}
           >
-            <button className="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-700 transition duration-300 w-full ">
+            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white font-semibold hover:bg-black hover:text-white transition duration-300 ease-in-out transform hover:scale-105 shadow-md w-full">
               Read More
             </button>
           </Link>
@@ -300,18 +291,11 @@ export default function Home() {
             className="flex justify-start p-4"
             onClick={handleClick}
           >
-            <button className="bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 transition duration-300 w-full">
+            <button className="rounded-lg px-5 py-2 bg-orange-500 text-white font-semibold hover:bg-black hover:text-white transition duration-300 ease-in-out transform hover:scale-105 shadow-md w-full">
               Read More
             </button>
           </Link>
         </div>
-        {/* <div className='bg-white rounded-lg overflow-hidden w-60 flex-col'>
-          <img src={BgOfHowWeWork} alt='Image description' className='w-full h-60 object-cover'/>
-          <h1 className='flex-col font-semibold pl-4 pt-4'>Villa</h1>
-          <div className='flex justify-start p-4'>
-            <button className='bg-orange-500 text-white py-2 px-4 rounded hover:bg-orange-600 transition duration-300'>For More</button>
-          </div>
-        </div> */}
       </div>
       <Reviews />
     </div>

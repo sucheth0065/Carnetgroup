@@ -3,16 +3,22 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css"; 
 import "slick-carousel/slick/slick-theme.css";
 import Bedroom1 from "../assets/Bedroom1.jpg";
-import Bedroom2 from "../assets/Bedroom2.jpg";
-import Bedroom3 from "../assets/Bedroom3.jpg";
+import Bedroom2 from "../assets/bedrooms2.jpg";
+import Bedroom3 from '../assets/bedrooms3.jpg';
 import Bedroom4 from "../assets/Bedroom4.jpg";
-import Bedroom5 from "../assets/Bedroom5.jpg";
-import Bedroom6 from "../assets/Bedroom6.jpg";
+import Bedroom5 from "../assets/bedrooms5.jpg";
+import Bedroom6 from "../assets/bedrooms6.jpg";
+import Bedroom8 from "../assets/bedrooms8.jpg";
+  
 
 const photos = [
   Bedroom1,
   Bedroom2,
+  Bedroom3,
   Bedroom4,
+  Bedroom5,
+  Bedroom6,
+  Bedroom8
 ];
 
 const BedroomDesign = () => {

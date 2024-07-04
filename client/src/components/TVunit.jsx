@@ -1,14 +1,45 @@
 import React from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css"; 
+import "slick-carousel/slick/slick-theme.css";
+import tvunits1 from "../assets/tvunits1.jpg";
+import tvunits2 from "../assets/tvunits2.jpg";
+import tvunits3 from "../assets/tvuints3.jpg";
+import tvunits4 from "../assets/tvuints4.jpg";
+import tvunits5 from "../assets/tvuints5.jpg";
+
+const photos = [
+  tvunits1,
+  tvunits2,
+  tvunits3,
+  tvunits4,
+  tvunits5
+]
 
 const TVUnitDesign = () => {
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+  };
   return (
     <div className="h-auto flex flex-col">
       <section className="text-center py-10 bg-orange-500 text-white">
-        <img
-          src="tvunit-hero.jpg"
-          alt="TV Unit Design"
-          className="w-full h-auto mb-5"
-        />
+        <Slider {...settings}>
+          {photos.map((photo, index) => (
+            <div key={index}>
+              <img
+                src={photo}
+                alt={`Kitchen-${index}`}
+                className="w-fit h-80 rounded shadow-lg pl-5 pr-5"
+              />
+            </div>
+          ))}
+        </Slider>
         <h1 className="text-5xl font-bold mt-10">TV Unit Design</h1>
       </section>
 

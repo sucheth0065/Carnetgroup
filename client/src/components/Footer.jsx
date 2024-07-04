@@ -27,7 +27,7 @@ export default function() {
                 </div>
                 <div className='flex mt-2'>
                     <h2 className='font-bold text-orange-500 flex-row' >WhatsApp: </h2>
-                    <a  href="https://wa.me/903006944?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" className='font-semibold text-s flex-row pl-2'>Carnet Design Studio</a>
+                    <a  href="https://wa.me/9030069444?text=Hello%2C%20I%20would%20like%20to%20inquire%20about%20your%20services." target="_blank" rel="noopener noreferrer" className='font-semibold text-s flex-row pl-2'>Carnet Design Studio</a>
                 </div>
             </div>
             <div className='flex-col text-white'>

@@ -35,7 +35,7 @@ const LivingRoom = () => {
               <img
                 src={photo}
                 alt={`Kitchen-${index}`}
-                className="w-fit h-80 rounded shadow-lg pl-5"
+                className="w-fit h-80 rounded shadow-lg pl-5 pr-5"
               />
             </div>
           ))}
