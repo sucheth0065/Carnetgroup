@@ -2,6 +2,7 @@ const express = require("express");
 const mongoose = require("mongoose");
 const dotenv = require("dotenv");
 const User = require("./models/user.model.js");
+const UserForm = require("./models/userForm.js");
 const bcrypt = require("bcrypt");
 const cors = require("cors");
 dotenv.config();
@@ -50,8 +51,36 @@ app.post("/signup", async (req, res) => {
       password: bcrypt.hashSync(password, bcryptSalt),
       mobilenumber: mobile,
     });
+    console.log(userDoc);
     res.status(200).json(userDoc);
-  } catch {
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+});
+
+app.post("/userform", async (req, res) => {
+  const {
+    name,
+    email,
+    phone,
+    roomType,
+    stylePreference,
+    budget,
+    additionalComments,
+  } = req.body;
+  try {
+    let inputDoc = await UserForm.create({
+      name,
+      email,
+      phone,
+      roomType,
+      stylePreference,
+      budget,
+      additionalComments,
+    });
+    console.log(inputDoc);
+    res.status(200).json(inputDoc);
+  } catch (error) {
     res.status(500).json({ error: error.message });
   }
 });

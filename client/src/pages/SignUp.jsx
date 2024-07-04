@@ -4,7 +4,7 @@ import axios from "axios";
 
 export default function SignUp() {
   const [formData, setFormData] = useState({});
-  const [savedData, setSavedData] = useState(null);
+
   const handleChange = (e) => {
     setFormData({
       ...formData,
@@ -13,13 +13,7 @@ export default function SignUp() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    try {
-      const response = axios.post("/signup", { ...formData });
-      setSavedData(response.data);
-      console.log(setSavedData);
-    } catch (error) {
-      console.error("There was an error saving the form data!", error);
-    }
+    axios.post("/signup", { ...formData });
   };
 
   return (

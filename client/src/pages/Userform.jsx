@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import axios from "axios";
 
 const DesignRequirementForm = () => {
   const [formData, setFormData] = useState({
@@ -22,6 +23,7 @@ const DesignRequirementForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Form data submitted:", formData);
+    axios.post("/userform", { ...formData });
   };
 
   return (
