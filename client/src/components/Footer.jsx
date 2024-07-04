@@ -68,7 +68,7 @@ export default function() {
         </div>
         <div className='bg-black bg-opacity-80 py-3'>
             <p className='text-center text-white text-sm'>
-                &copy; Copyright {new Date().getFullYear()} - Carnet Design Studio. All rights reserved | Designed By S&S WebElite
+                &copy; Copyright {new Date().getFullYear()} - Carnet Design Studio. All rights reserved.
             </p>
         </div> 
     </footer>

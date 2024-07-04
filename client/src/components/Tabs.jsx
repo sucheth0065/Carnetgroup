@@ -50,8 +50,12 @@ export default function BasicTabs() {
         <Tabs
           value={value}
           onChange={handleChange}
-          textColor="secondary"
-          indicatorColor="secondary"
+          textColor="orange"
+          sx={{
+            "& .MuiTabs-indicator": {
+              backgroundColor: "orange",
+            },
+          }}
           aria-label="basic tabs example"
           centered
         >
