@@ -13,7 +13,13 @@ export default function SignUp() {
   };
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post("/signup", { ...formData });
+    try {
+      const response = axios.post("/signup", { ...formData });
+      setSavedData(response.data);
+      console.log(setSavedData);
+    } catch (error) {
+      console.error("There was an error saving the form data!", error);
+    }
   };
 
   return (

@@ -45,7 +45,7 @@ export default function HowWeWork() {
             </p>
             <Link
               to="/contactus"
-              className="inline-flex h-10 items-center justify-center rounded-md bg-black text-white px-8 text-sm font-medium text-primary-foreground mt-3"
+              className="mt-4 px-10 py-2 bg-black text-white font-semibold rounded hover: transition duration-300 ease-in-out transform hover:scale-105 shadow-xl"
             >
               Request a Consultation
             </Link>
@@ -66,7 +66,7 @@ export default function HowWeWork() {
               Specify your interior design needs to receive an accurate price
               quote. Plan ahead and stay within your budget!
             </p>
-            <button className="mt-4 px-5 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-700">
+            <button className="mt-4 px-10 py-2 bg-black text-white font-semibold rounded hover: transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
               Get a Quote
             </button>
           </div>
@@ -98,7 +98,7 @@ export default function HowWeWork() {
               <br></br>
               <a
                 href="/about"
-                className="text-decoration-line: underline text-white"
+                className="underline text-white text-xl mt-3 p-2"
               >
                 Know about us here!
               </a>
@@ -142,7 +142,7 @@ export default function HowWeWork() {
               <br></br>
               <a
                 href="/ourservices"
-                className="text-decoration-line: underline text-white"
+                className="underline text-white text-xl mt-3 p-2"
               >
                 Take a look at our services here!
               </a>
@@ -158,14 +158,13 @@ export default function HowWeWork() {
               We believe in full transparency when it comes to disclosures to
               our esteemed clients. Get a glimpse of real material samples to be
               used in your interior decor.
-              <br></br>
-              <a
-                href="/ourdesigns"
-                className="text-decoration-line: underline text-white"
-              >
-                Take a look at our designs here!
-              </a>
             </p>
+            <a
+              href="/ourdesigns"
+              className="underline text-white text-xl mt-3 p-2"
+            >
+              Take a look at our designs here!
+            </a>
           </div>
           <div className="h-80 w-1/2">
             <img
@@ -194,7 +193,7 @@ export default function HowWeWork() {
               execution viability. The final quotation will be the only price
               added to your tab. No hidden costs.
             </p>
-            <button className="mt-4 px-5 py-2 bg-blue-500 text-white font-semibold rounded hover:bg-blue-700">
+            <button className="mt-4 px-10 py-2 bg-black text-white font-semibold rounded hover: transition duration-300 ease-in-out transform hover:scale-105 shadow-md">
               Get a Quote
             </button>
           </div>
