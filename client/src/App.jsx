@@ -13,6 +13,7 @@ import "./App.css";
 import OurDesigns from "./pages/OurDesigns";
 import OurServices from "./pages/OurServices.jsx";
 import DesignRequirementForm from "./pages/Userform.jsx";
+import AdminDashboard from "./pages/Admin.jsx";
 
 axios.defaults.baseURL = "http://localhost:3000";
 
@@ -32,6 +33,7 @@ export default function App() {
         <Route path="/contactus" element={<ContactUs />} />
         <Route path="/ourservices" element={<OurServices />} />
         <Route path="/userForm" element={<DesignRequirementForm />} />
+        <Route path="/admin" element={<AdminDashboard />} />
       </Routes>
       <Footer />
     </BrowserRouter>
