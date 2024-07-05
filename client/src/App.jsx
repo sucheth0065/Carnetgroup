@@ -14,6 +14,7 @@ import OurDesigns from "./pages/OurDesigns";
 import OurServices from "./pages/OurServices.jsx";
 import DesignRequirementForm from "./pages/Userform.jsx";
 import AdminDashboard from "./pages/Admin.jsx";
+import LandingPage from "./pages/ServicesCards.jsx";
 
 axios.defaults.baseURL = "http://localhost:3000";
 

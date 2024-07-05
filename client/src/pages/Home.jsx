@@ -13,6 +13,7 @@ import quick from "../assets/quick-icon.jpg";
 import Reviews from "../components/Reviews.jsx";
 import Bedroom1 from "../assets/bedrooms1.jpg";
 import Living from "../assets/livingroom.jpg";
+import LandingPage from "./ServicesCards.jsx";
 //This is code
 
 const handleClick = () => {
@@ -22,14 +23,14 @@ const handleClick = () => {
 export default function Home() {
   return (
     <div className="font-sans bg-gray-100 text-gray-900">
-        <div className="relative h-screen w-full">
-          <video
-            className="absolute inset-0 w-full h-full object-cover"
-            src={HomePageVideo}
-            autoPlay
-            loop
-            muted
-          />
+      <div className="relative h-screen w-full">
+        <video
+          className="absolute inset-0 w-full h-full object-cover"
+          src={HomePageVideo}
+          autoPlay
+          loop
+          muted
+        />
       </div>
       <div className="bg-gradient-to-r from-orange-400 to-red-400 flex justify-between items-center p-3">
         <div className="flex-col ml-6 items-center">
@@ -199,7 +200,7 @@ export default function Home() {
           </button>
         </Link>
       </div>
-      <div className="flex flex-row items-center justify-center space-x-4 mt-5 mb-5 bg-h-full w-full p-10 gap-5">
+      {/* <div className="flex flex-row items-center justify-center space-x-4 mt-5 mb-5 bg-h-full w-full p-10 gap-5">
         <div className="rounded-lg overflow-hidden w-60  flex-col">
           <img
             src={Living}
@@ -304,7 +305,8 @@ export default function Home() {
             </button>
           </Link>
         </div>
-      </div>
+      </div> */}
+      <LandingPage />
       <Reviews />
     </div>
   );
